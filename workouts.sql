@@ -15,6 +15,7 @@ workout_streaks as (
         workout_id,
         sum(total_seconds) as total_jumping_time,
         count(*) as n_streaks,
+        avg(total_steps) as average_steps,
         median(total_steps) as median_jumps_per_streak,
         max(total_steps) as best_streak
 
